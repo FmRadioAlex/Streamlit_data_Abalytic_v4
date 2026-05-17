@@ -77,7 +77,7 @@ if not st.session_state.authenticated:
             st.error("❌ Wrong login")
     
 
-    if st.button("Question"):
+    if st.button("Guest"):
         st.session_state.authenticated = True
         st.session_state.user = "Guest"
         st.rerun()
